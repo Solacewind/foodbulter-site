@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://www.solacewind.cloud/download.html" />
+  <title>下载食材管家 · Solacewind</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0;background:#f8faf5;color:#17251d;font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif}.page{width:min(680px,calc(100% - 40px));margin:0 auto;padding:64px 0}.back{font-size:14px;color:#477d5b}.card{margin-top:27px;padding:38px;border-radius:24px;background:#fff;border:1px solid #dfe8df;box-shadow:0 18px 45px #2d573012;text-align:center}.logo{display:grid;place-items:center;width:58px;height:58px;margin:auto;border-radius:19px;background:linear-gradient(145deg,#71be7c,#2e7854);font-size:28px}.tag{display:inline-block;margin-top:18px;padding:5px 10px;border-radius:999px;background:#e9f5e9;color:#377c57;font-size:12px;font-weight:700}h1{font-size:32px;letter-spacing:-.04em;margin:14px 0 9px}p{color:#647268;line-height:1.7;margin:0}.channels{display:grid;gap:12px;margin-top:28px;text-align:left}.channel{padding:17px;border-radius:15px;background:#f7faf5;border:1px solid #e2ece2}.channel b{display:block;font-size:15px}.channel span{display:block;margin-top:4px;color:#6d7c72;font-size:13px}.notice{margin-top:22px;font-size:12px;color:#87938a}.help{margin-top:24px;font-size:13px;color:#6d7c72}@media(max-width:480px){.page{padding:30px 0}.card{padding:28px 20px}h1{font-size:27px}}
+  </style>
+</head>
+<body>
+  <main class="page"><a class="back" href="https://www.solacewind.cloud/">← 返回官网</a><section class="card"><div class="logo" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><rect x="6" y="3" width="12" height="18" rx="3" fill="white"/><path d="M6 10h12" stroke="#79be83" stroke-width="1.5"/><path d="M14.8 6.5v2M14.8 12.5v5" stroke="#39835b" stroke-width="1.5" stroke-linecap="round"/><path d="M11.8 14.8c1.1-.3 2.3.4 2.5 1.6.3 1.4-.6 2.9-2.2 4-1.6-1.1-2.5-2.6-2.2-4 .2-1.2 1.4-1.9 2.5-1.6Z" fill="#ef9947"/></svg></div><span class="tag">食材管家</span><h1>下载渠道准备中</h1><p id="message">我们正在整理首个公开安装包。应用发布后，此页将提供 Android 安装包与 iOS TestFlight 下载入口。</p><div class="channels"><div class="channel"><b>Android 版</b><span>将提供最新 APK 安装包。</span></div><div class="channel"><b>iOS 版</b><span>将通过 TestFlight 提供安装。</span></div></div><p class="notice">请仅从 www.solacewind.cloud 获取官方安装包，避免安装来源不明的版本。</p><p class="help">官网：<strong>www.solacewind.cloud</strong></p></section></main>
+  <script>
+    const platform = new URLSearchParams(location.search).get('platform');
+    const message = document.getElementById('message');
+    if (platform === 'android') message.textContent = 'Android 公开安装包正在准备中。发布后，此页会直接提供最新 APK 下载。';
+    if (platform === 'ios') message.textContent = 'iOS 测试版正在准备中。发布后，此页会提供 TestFlight 安装入口。';
+  </script>
+</body>
+</html>
