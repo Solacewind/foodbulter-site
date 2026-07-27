@@ -1,4 +1,4 @@
-# 食材管家官网
+# 鲜期簿官网
 
 静态官网入口为 `index.html`，下载页为 `download.html`。
 
